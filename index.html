@@ -3,37 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css" type="text/css"/>
+
+
     <title>The calculator</title>
+    <link rel="stylesheet" href="assets/fonts/fontawesome6.4.2/css/all.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+
 </head>
 <body>
-    <div id="calculator">
-        <div class="result">
-            0
-        </div>
+<div id="calculator">
 
-        <div class="buttons">
-            <button class="operator row1">AC</button>
-            <button class="operator row1">+/-</button>
-            <button class="operator row1">%</button>
-            <button class="operator">&#247;</button>
-            <button class="number">7</button>
-            <button class="number">8</button>
-            <button class="number">9</button>
-            <button class="operator">&#215;</button>
-            <button class="number">4</button>
-            <button class="number">5</button>
-            <button class="number">6</button>
-            <button class="operator">-</button>
-            <button class="number">1</button>
-            <button class="number">2</button>
-            <button class="number">3</button>
-            <button class="operator">+</button>
-            <button class="number zero">0</button>
-            <button>,</button>
-            <button class="operator">=</button>
+    <div class="result">
+
+    </div>
+
+    <div class="buttons">
+        <button class="operator row1 clear">AC</button>
+        <button class="operator row1 minus2">+/-</button>
+        <button data-tooltip="Division Remainder"  class="operator row1">%</button>
+        <button class="operator">&#247</button>
+        <button class="number">7</button>
+        <button class="number">8</button>
+        <button class="number">9</button>
+        <button class="operator">&#215</button>
+        <button class="number">4</button>
+        <button class="number">5</button>
+        <button class="number">6</button>
+        <button class="operator">-</button>
+        <button class="number">1</button>
+        <button class="number">2</button>
+        <button class="number">3</button>
+        <button class="operator">+</button>
+        <button class="number zero">0</button>
+        <button>,</button>
+        <button class="operator equal">=</button>
+    </div>
+    <div class="history">
+        <a href="#popup1"><i class="fa-solid fa-arrow-down"></i></a>
+        <div id="popup1" class="popup-container">
+            <div class="popup-content">
+                <a href="#" class="close">&times;</a>
+                <h3>History</h3>
+                <div class="show-history">
+
+                </div>
+            </div>
         </div>
     </div>
-    <script src="./scripts.js"></script>
+</div>
+
+<!--<script src="assets/js/jquery.js"></script>-->
+<script src="assets/js/scripts.js"></script>
+<script src="assets/fonts/fontawesome6.4.2/js/all.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.4.4/math.js"></script>
 </body>
 </html>
